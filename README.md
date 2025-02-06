@@ -29,23 +29,19 @@ A production-ready template for Next.js 15 applications with TypeScript and SSR 
    npm run dev
    \```
 
-## Project Structure
+## Key Files and Directories
 
-\```
-.
-├── app/
-│ ├── layout.tsx
-│ └── page.tsx
-├── public/
-├── styles/
-│ └── globals.css
-├── components/
-├── lib/
-├── types/
-├── amplify.yml # Important for Amplify deployment
-├── next.config.js
-└── package.json
-\```
+- `app/`: Main application directory using Next.js 15 App Router
+  - `layout.tsx`: Root layout component
+  - `page.tsx`: Home page component
+- `public/`: Static files like images
+- `styles/`: CSS files including global styles
+- `components/`: Reusable React components
+- `lib/`: Utility functions and shared logic
+- `types/`: TypeScript type definitions
+- `amplify.yml`: AWS Amplify deployment configuration
+- `next.config.js`: Next.js configuration file
+- `package.json`: Project dependencies and scripts
 
 ## Deployment to AWS Amplify
 
