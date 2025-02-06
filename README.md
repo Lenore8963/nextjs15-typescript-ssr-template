@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js 15 TypeScript SSR Template for AWS Amplify
 
-## Getting Started
+A production-ready template for Next.js 15 applications with TypeScript and SSR support, designed for deployment to AWS Amplify.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Next.js 15 with App Router
+- TypeScript configuration
+- SSR support
+- Tailwind CSS
+- ESLint configuration
+- Deployment-ready for AWS Amplify
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Quick Start
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Clone this repository
+   \```bash
+   git clone https://github.com/[your-username]/nextjs15-typescript-ssr-template.git
+   cd nextjs15-typescript-ssr-template
+   \```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. Install dependencies
+   \```bash
+   npm install
+   \```
 
-## Learn More
+3. Start development server
+   \```bash
+   npm run dev
+   \```
 
-To learn more about Next.js, take a look at the following resources:
+## Project Structure
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+\```
+.
+├── app/
+│ ├── layout.tsx
+│ └── page.tsx
+├── public/
+├── styles/
+│ └── globals.css
+├── components/
+├── lib/
+├── types/
+├── amplify.yml # Important for Amplify deployment
+├── next.config.js
+└── package.json
+\```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Deployment to AWS Amplify
 
-## Deploy on Vercel
+This template is designed to work with the aws-amplify-nextjs-cdk-template repository. To deploy:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Push your code to GitHub
+2. Follow the instructions in aws-amplify-nextjs-cdk-template
+3. No additional configuration needed!
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Common Issues and Solutions
+
+### Build Failures in Amplify
+
+- Verify Node.js version matches amplify.yml
+- Check for missing dependencies
+- Ensure proper baseDirectory in amplify.yml
+
+### SSR Issues
+
+- Verify WEB_COMPUTE platform is enabled in Amplify
+- Check for proper Next.js configuration
