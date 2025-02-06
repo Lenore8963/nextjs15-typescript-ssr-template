@@ -1,6 +1,8 @@
 # Next.js 15 TypeScript SSR Template for AWS Amplify
 
-A production-ready template for Next.js 15 applications with TypeScript and SSR support, designed for deployment to AWS Amplify.
+- A production-ready template for Next.js 15 applications with TypeScript and SSR support, designed for deployment to AWS Amplify.
+
+- This template is designed to work with the aws-amplify-nextjs-cdk-template repository. https://github.com/Lenore8963/aws-amplify-nextjs-cdk-template
 
 ## Features
 
@@ -45,7 +47,7 @@ A production-ready template for Next.js 15 applications with TypeScript and SSR 
 
 ## Deployment to AWS Amplify
 
-This template is designed to work with the aws-amplify-nextjs-cdk-template repository. To deploy:
+To deploy:
 
 1. Push your code to GitHub
 2. Follow the instructions in aws-amplify-nextjs-cdk-template
